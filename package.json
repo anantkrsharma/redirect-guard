@@ -9,6 +9,7 @@
   },
   "packageManager": "pnpm@10.26.0",
   "devDependencies": {
+    "@types/chrome": "^0.1.32",
     "ts-loader": "^9.5.4",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1",
