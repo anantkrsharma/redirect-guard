@@ -3,15 +3,19 @@ import { resolve as _resolve } from "path";
 export const entry = {
     background: "./src/background.ts",
     content: "./src/content.ts",
-    popup: "./src/popup/index.tsx"
+    popup: "./src/popup/index.tsx",
+    rules: "./src/rules.ts"
 };
+
 export const output = {
     filename: "[name].js",
     path: _resolve(__dirname, "dist")
 };
+
 export const resolve = {
     extensions: [".ts", ".tsx", ".js", ".jsx"]
 };
+
 export const module = {
     rules: [
         {

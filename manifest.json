@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Redirect Guard",
+    "name": "Redirect-Guard",
     "version": "1.0.0",
-    "description": "Blocks auto redirects & shows suspicious links",
+    "description": "Blocks auto redirects and highlights suspicious links.",
     "permissions": [
         "storage",
         "declarativeNetRequest",
@@ -10,7 +10,7 @@
     ],
     "host_permissions": ["<all_urls>"],
     "background": {
-        "service_worker": "dist/background.js"
+        "service_worker": "./dist/background.js"
     },
     "action": {
         "default_popup": "popup.html"
@@ -18,7 +18,7 @@
     "content_scripts": [
         {
         "matches": ["<all_urls>"],
-        "js": ["dist/content.js"],
+        "js": ["./dist/content.js"],
         "run_at": "document_start"
         }
     ]

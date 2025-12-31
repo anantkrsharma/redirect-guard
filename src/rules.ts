@@ -1,0 +1,10 @@
+export function defaultRules() {
+    return [
+        {
+            id: 1,
+            priority: 1,
+            action: { type: "block" },
+            condition: { urlFilter: "*redirect*", resourceTypes: ["main_frame"] }
+        }
+    ];
+}
